@@ -1,9 +1,12 @@
 ## About
 
 This is the code repository for a toy compiler verification. It has a compiler
-implemented in Haskell (in `src/Compiler.hs`) that is then converted to Coq
-(using the `hs-to-coq` tool, with result in `src/Compiler.v`) and verified in
-Coq (proofs in `src/Proofs.v`). 
+for arithmetic expressions to a tiny stack machine (idea came from Adam
+Chlipala's [CPDT]((http://adam.chlipala.net/cpdt/))) implemented in Haskell (in
+`src/Compiler.hs`) that is then converted to Coq (using the
+[hs-to-coq](https://github.com/antalsz/hs-to-coq) tool by [Spector-Zabusky,
+Breitner, Rizkallah, and Weirich](https://arxiv.org/abs/1711.09286), with result
+in `src/Compiler.v`) and verified in Coq (proofs in `src/Proofs.v`).
 
 The proofs follow a style that is essentially a modified version of the proof
 style advocated by Adam Chlipala in [Certified Programming with Dependent
