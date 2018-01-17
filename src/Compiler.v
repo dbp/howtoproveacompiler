@@ -28,7 +28,7 @@ Inductive Arith : Type := Num : GHC.Num.Int -> Arith
                        |  Times : Arith -> Arith -> Arith.
 (* Converted value declarations: *)
 
-(* Translating `instance GHC.Show.Show Compile.StackOp' failed: OOPS! Cannot
+(* Translating `instance GHC.Show.Show Compiler.StackOp' failed: OOPS! Cannot
    find information for class Qualified "GHC.Show" "Show" unsupported *)
 
 Definition compile : Arith -> list StackOp :=

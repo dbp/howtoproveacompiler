@@ -40,7 +40,8 @@ git submodule update
 Then you need to both build `hs-to-coq`:
 
 ```
-cd hs-to-coq && stack setup && stack build
+stack setup --resolver lts-8.3
+STACK_YAML=hs-to-coq/stack.yaml stack build
 ```
 
 And get Coq 8.6 and accompanying libraries:
@@ -55,7 +56,7 @@ Once Coq has been installed, you can compile the base library for `hs-to-coq`
 Haskell's `base` library):
 
 ```
-cd hs-to-coq && make -C base
+make -C hs-to-coq/base
 ```
 
 Finally, build the `literatecoq` library:
@@ -69,7 +70,7 @@ make -C literatecoq
 To convert the Haskell source to Coq, run:
 
 ```
-cd hs-to-coq && stack exec hs-to-coq -- -o ../src/ ../src/Compiler.hs -e base/edits && cd ..
+STACK_YAML=hs-to-coq/stack.yaml stack exec hs-to-coq -- -o src/ src/Compiler.hs -e hs-to-coq/base/edits
 ```
 
 This will put `Compiler.v` into `src`.
