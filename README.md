@@ -14,7 +14,7 @@ Types](http://adam.chlipala.net/cpdt/) -- modified slightly in that hints are
 always kept extremely locally scoped. The intention behind this (explained a
 little further in the library repository for the couple tactics that implement
 this: [dbp/literatecoq](https://github.com/dbp/literatecoq)) is to make
-reading proofs be as easy as possible, where an paper you would write "follows
+reading proofs be as easy as possible, where on paper you would write "follows
 by induction using X, Y, and Z". When hints end up in global databases, you can
 end up writing proofs that say "follows by induction using X, Z", because you
 had hinted Y somewhere earlier.
