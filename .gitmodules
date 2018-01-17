@@ -1,3 +1,6 @@
 [submodule "hs-to-coq"]
 	path = hs-to-coq
 	url = https://github.com/antalsz/hs-to-coq
+[submodule "literatecoq"]
+	path = literatecoq
+	url = https://github.com/dbp/literatecoq

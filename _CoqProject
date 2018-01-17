@@ -1,0 +1,4 @@
+-Q src ""
+-Q hs-to-coq/base ""
+-Q literatecoq LiterateCoq
+src/Compiler.v src/Proofs.v
