@@ -21,7 +21,7 @@ had hinted Y somewhere earlier.
 
 ## Writeup
 
-The accompanying writeup for this compiler is at YYYY.
+The accompanying writeup for this compiler is at [https://dbp.io/essays/2018-01-16-how-to-prove-a-compiler-correct.html](https://dbp.io/essays/2018-01-16-how-to-prove-a-compiler-correct.html).
 
 ## Setup
 
